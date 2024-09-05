@@ -2,9 +2,9 @@
 layout: default
 ---
 
-| # Windows    | # Linux           |
-|:-------------|:------------------|
-| ok           | good swedish fish |
+| Windows      | Linux             |
+|--------------|-------------------|
+| [Link to another page](./Windows/remote-access.html) | [Link to another page](./Linux/remote-access.html) |
 | out of stock | good and plenty   |
 | ok           | good `oreos`      |
 | ok           | good `zoute` drop |
