@@ -8,7 +8,7 @@
   or
   ```bash
   $ rpm -qa | grep firewalld
-  $\color{red}{\textsf{firewalld}}$-filesystem-1.3.4-1.el9.noarch
+  `rgb(9, 105, 218)`firewalld-filesystem-1.3.4-1.el9.noarch
   $\color{red}{\textsf{firewalld}}$--1.3.4-1.el9.noarch
   ```
   > [!WARNING]
