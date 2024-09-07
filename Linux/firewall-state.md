@@ -47,4 +47,4 @@ or
 ```bash
 $ iptables -A INPUT -p tcp --dport 22 -j ACCEPT
 ```
-↩️(remote-access.md)
+[↩️](remote-access.md)
