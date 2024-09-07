@@ -1,4 +1,4 @@
-## 1. Identify the service your OS is using as Firewall
+## Identify the service your OS is using as Firewall
 ```bash
 $ rpm -qa | grep firewalld
   firewalld-filesystem-1.3.4-1.el9.noarch
