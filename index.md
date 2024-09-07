@@ -1,1 +1,4 @@
-| ![Linux](/assets/img/Linux_penguin.jpg) | ![Windows](/assets/img/Windows_logo.jpg) |
+# Make your choice
+| Linux                                           | Windows                                       |
+| ----------------------------------------------- | --------------------------------------------- |
+| ![Linux_penguin](/assets/img/Linux_penguin.jpg) | ![Windows_logo](/assets/img/Windows_logo.jpg) |
