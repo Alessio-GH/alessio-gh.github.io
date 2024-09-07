@@ -1,5 +1,5 @@
 # Prerequisites
-## Identify the service your OS is using as Firewall;
+> ## Identify the service your OS is using as Firewall
 
 ```bash
 $ rpm -qa | grep firewalld
@@ -42,7 +42,7 @@ $ systemctl status iptables
 > Only one of the two services has to be *active* and *enabled* eventually.
 > Use **$ systemctl start firewalld** and **$ systemctl enable firewalld** for this purpose.
 
->## Stop and block the service you don't need.
+> ## Stop and disable the service you don't need
 
 ```bash
 $ systemctl stop firewalld
@@ -64,7 +64,7 @@ $ systemctl mask iptables
 > Remember to restart firewall service.
 > Use **$ systemctl restart firewalld** or **$ systemctl restart iptables** for this purpose.
 
-## Check SSH firewall rule;
+> ## Check SSH firewall rule
 
 ```bash
 $ firewall-cmd --list-all
@@ -87,7 +87,21 @@ or
 
 ```bash
 $ iptables –L --line-numbers
-
+  Chain INPUT (policy ACCEPT)
+  num  target     prot opt source               destination
+  1    ACCEPT     all  --  anywhere             anywhere             state RELATED,ESTABLISHED
+  2    ACCEPT     icmp --  anywhere             anywhere
+  3    ACCEPT     all  --  anywhere             anywhere
+  4    ACCEPT     tcp  --  anywhere             anywhere             state NEW tcp dpt:ssh
+  5    REJECT     all  --  anywhere             anywhere             reject-with icmp-host-prohibited
+  6    ACCEPT     tcp  --  anywhere             anywhere             tcp dpt:ssh
+  
+  Chain FORWARD (policy ACCEPT)
+  num  target     prot opt source               destination
+  1    REJECT     all  --  anywhere             anywhere             reject-with icmp-host-prohibited
+  
+  Chain OUTPUT (policy ACCEPT)
+  num  target     prot opt source               destination
 ```
 and open port 22
 
