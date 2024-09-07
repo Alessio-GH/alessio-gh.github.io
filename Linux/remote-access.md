@@ -1,7 +1,5 @@
 # Prerequisites
-<details>
-
-<summary>## 1. Identify the service your OS is using as Firewall;</summary>
+## Identify the service your OS is using as Firewall;
 
 ```bash
 $ rpm -qa | grep firewalld
@@ -39,16 +37,12 @@ $ systemctl status iptables
    Loaded: loaded (/usr/lib/systemd/system/iptables.service; disabled; preset: disabled)
    Active: inactive (dead)
 ```
-
-</details>
       
 > [!WARNING]
 > Only one of the two services has to be *active* and *enabled* eventually.
 > Use **$ systemctl start firewalld** and **$ systemctl enable firewalld** for this purpose.
 
-<details>
-
-<summary>## 2. Stop and block the service you don't need.</summary>
+>## Stop and block the service you don't need.
 
 ```bash
 $ systemctl stop firewalld
@@ -66,15 +60,11 @@ $ systemctl disable iptables
 $ systemctl mask iptables
 ```
 
-</details>
-
 > [!WARNING]
 > Remember to restart firewall service.
 > Use **$ systemctl restart firewalld** or **$ systemctl restart iptables** for this purpose.
 
-<details>
-
-<summary>## 3. Check SSH firewall rule;</summary>
+## Check SSH firewall rule;
 
 ```bash
 $ firewall-cmd --list-all
@@ -110,5 +100,3 @@ or
 ```bash
 $ iptables -A INPUT -p tcp --dport 22 -j ACCEPT
 ```
-
-</details>
