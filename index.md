@@ -4,7 +4,7 @@ layout: default
 
 | Windows      | Linux             |
 |--------------|-------------------|
-| [Link to another page](./Windows/remote-access.html) | [Link to another page](./Linux/remote-access.html) |
+| [SSH CMD remote access](/Windows/remote-access.md) | [SSH terminal remote access](/Linux/remote-access.md) |
 | out of stock | good and plenty   |
 | ok           | good `oreos`      |
 | ok           | good `zoute` drop |
