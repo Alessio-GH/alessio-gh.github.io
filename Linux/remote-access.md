@@ -1,16 +1,17 @@
 # Prerequisites
-:fire: ## Identify the service your OS is using as Firewall;
+## 1. Identify the service your OS is using as Firewall;
 ```bash
-$ rpm -qa | grep iptables
-iptables-libs-1.8.10-4.el9.x86_64
-iptables-nft-1.8.10-4.el9.x86_64
+$ rpm -qa | grep firewalld
+  firewalld-filesystem-1.3.4-1.el9.noarch
+  firewalld--1.3.4-1.el9.noarch
+
 ```
 or
 
 ```bash
-$ rpm -qa | grep firewalld
-firewalld-filesystem-1.3.4-1.el9.noarch
-firewalld--1.3.4-1.el9.noarch
+$ rpm -qa | grep iptables
+  iptables-libs-1.8.10-4.el9.x86_64
+  iptables-nft-1.8.10-4.el9.x86_64
 ```
 and check their status:
 
@@ -39,5 +40,37 @@ $ systemctl status iptables
 > [!WARNING]
 > Only one of the two services has to be *active* and *enabled* eventually. Use **$ systemctl start firewalld** and **$ systemctl enable firewalld** for this purpose.
 
-:door: ## Open SSH port;
+## 2. Check SSH firewall rule;
+```bash
+$ firewall-cmd --list-all
+  public (active)
+  target: default
+  icmp-block-inversion: no
+  interfaces: ens33
+  sources:
+  services: cockpit dhcpv6-client ssh
+  ports:
+  protocols:
+  forward: yes
+  masquerade: no
+  forward-ports:
+  source-ports:
+  icmp-blocks:
+  rich rules:
+```
+or
 
+```bash
+$ iptables –L --line-numbers
+
+```
+and open port 22
+
+```bash
+$ sudo firewall-cmd --permanent --zone=public --add-port=22/tcp
+```
+or
+
+```bash
+$ iptables -A INPUT -p tcp --dport 22 -j ACCEPT
+```
