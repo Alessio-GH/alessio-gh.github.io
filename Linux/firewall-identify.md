@@ -1,4 +1,4 @@
-## Identify the service your OS is using as Firewall
+## 1. Identify the service your OS is using as Firewall 🔥
 ```bash
 $ rpm -qa | grep firewalld
   firewalld-filesystem-1.3.4-1.el9.noarch
@@ -27,4 +27,4 @@ $ systemctl status firewalld
    CGroup: /system.slice/firewalld.service
            └─846 /usr/bin/python3 -s /usr/sbin/firewalld --nofork --nopid
 ```
-[:leftwards_arrow_with_hook:](remote-access.md)
+[↩️](remote-access.md)
