@@ -1,7 +1,3 @@
----
-layout: default
----
-
 | Windows      | Linux             |
 |--------------|-------------------|
 | [SSH CMD remote access](/Windows/remote-access.md) | [SSH terminal remote access](/Linux/remote-access.md) |
