@@ -3,4 +3,4 @@ logo: /assets/img/avatar.png
 description: My personal system administrator guide.
 show_downloads: false
 google_analytics:
-theme: /_sass/jekyll-theme-minimal.scss
+theme: jekyll-theme-minimal
