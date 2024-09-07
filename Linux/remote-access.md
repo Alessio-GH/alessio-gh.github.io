@@ -1,6 +1,5 @@
 # Prerequisites
-{% include "/Linux/firewall-identify.md" %}
-> ## Identify the service your OS is using as Firewall
+## 1. [Identify the service your OS is using as Firewall](firewall-identify.md)
 
 ```bash
 $ rpm -qa | grep firewalld
