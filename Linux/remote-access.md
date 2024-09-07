@@ -1,5 +1,5 @@
 # Prerequisites
-## Identify the service your OS is using as Firewall;
+:fire: ## Identify the service your OS is using as Firewall;
 ```bash
 $ rpm -qa | grep iptables
 iptables-libs-1.8.10-4.el9.x86_64
@@ -39,5 +39,5 @@ $ systemctl status iptables
 > [!WARNING]
 > Only one of the two services has to be *active* and *enabled* eventually. Use **$ systemctl start firewalld** and **$ systemctl enable firewalld** for this purpose.
 
-## Open SSH port :door:;
+:door: ## Open SSH port;
 
