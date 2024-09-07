@@ -16,6 +16,7 @@
   ```
   > [!WARNING]
   > Only one of the two service has to be *active* and *enabled* eventually.
+  > Use *$ systemctl start firewalld* and *$ systemctl enable firewalld* for this purpose.
   ```bash
   $ systemctl status firewalld
   ● firewalld.service - firewalld - dynamic firewall daemon
