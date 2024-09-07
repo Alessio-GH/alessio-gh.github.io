@@ -14,4 +14,4 @@ $ systemctl stop iptables
 $ systemctl disable iptables
 $ systemctl mask iptables
 ```
-↩️(remote-access.md)
+[↩️](remote-access.md)
