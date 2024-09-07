@@ -40,7 +40,23 @@ $ systemctl status iptables
 > [!WARNING]
 > Only one of the two services has to be *active* and *enabled* eventually. Use **$ systemctl start firewalld** and **$ systemctl enable firewalld** for this purpose.
 
-## 2. Check SSH firewall rule;
+## 2. Stop and block the service you don't need.
+```bash
+$ systemctl stop firewalld
+$ systemctl disable firewalld
+  Removed "/etc/systemd/system/multi-user.target.wants/firewalld.service".
+  Removed "/etc/systemd/system/dbus-org.fedoraproject.FirewallD1.service".
+$ systemctl mask firewalld
+  Created symlink /etc/systemd/system/firewalld.service → /dev/null.
+```
+or
+
+```bash
+$ systemctl stop iptables
+$ systemctl disable iptables
+$ systemctl mask iptables
+```
+## 3. Check SSH firewall rule;
 ```bash
 $ firewall-cmd --list-all
   public (active)
@@ -67,7 +83,8 @@ $ iptables –L --line-numbers
 and open port 22
 
 ```bash
-$ sudo firewall-cmd --permanent --zone=public --add-port=22/tcp
+$ firewall-cmd --permanent --zone=public --add-port=22/tcp
+  success
 ```
 or
 
