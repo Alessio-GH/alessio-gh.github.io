@@ -1,6 +1,6 @@
 | Windows      | Linux             |
 |--------------|-------------------|
-| [SSH CMD remote access](/Windows/remote-access.md) | [SSH terminal remote access](/Linux/remote-access.md) |
+| [SSH CMD remote access](/Windows/remote-access.html) | [SSH terminal remote access](/Linux/remote-access.html) |
 | out of stock | good and plenty   |
 | ok           | good `oreos`      |
 | ok           | good `zoute` drop |
