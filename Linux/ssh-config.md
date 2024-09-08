@@ -1,4 +1,4 @@
-## 4. Check SSH configuration file ℹ️
+## 4. Check SSH configuration file ⚙️
 ```bash
 $ vi /etc/ssh/sshd_config
 ```
