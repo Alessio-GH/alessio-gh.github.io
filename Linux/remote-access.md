@@ -13,7 +13,7 @@
 > [!TIP]
 > Try to connect remotely before changing firewall rules.
 
-## 4. [Check SSH configuration file ℹ️](ssh-config.md)
+## 4. [Check SSH configuration file ⚙️](ssh-config.md)
 > [!WARNING]
 > If you change file configuration, remember to restart SSH service using **$ systemctl restart ssh** or **$ systemctl restart ssh**.
 
