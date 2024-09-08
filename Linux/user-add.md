@@ -1,4 +1,4 @@
-- # Prepare
+# Prepare
 ### Identify existing users 🆔
 ```bash
 $ getent passwd | cut -d: -f1 | sort
@@ -44,12 +44,11 @@ $ getent passwd | cut -d: -f1 | sort
   tcpdump
   tss
 </details>
-
 > [!NOTE]
 > A prompt will be visualized if you try to create a user that already exists.
+***
 
-
-- # Execute
+# Execute
 ### Create user 🪪
 ```bash
 $ useradd alessio
@@ -62,9 +61,9 @@ $ useradd alessio
 ```
 > [!WARNING]
 > A prompt will be visualized if you choose a password that doesn't satisfy security checks.
+***
 
-
-- # Check
+# Check
 ### User created with default settings 👌
 ```bash
 $ id alessio
