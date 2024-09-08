@@ -48,7 +48,7 @@ $ getent passwd | cut -d: -f1 | sort
   tss
 </details>
 
-***
+---
 
 # Execute
 ### Create user 🪪
@@ -64,7 +64,7 @@ $ useradd alessio
 > [!WARNING]
 > A prompt will be visualized if you choose a password that doesn't satisfy security checks.
 
-***
+---
 
 # Check
 ### User created with default settings 👌
