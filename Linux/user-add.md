@@ -74,9 +74,9 @@ $ id alessio
 $ cat /etc/passwd | grep alessio
   alessio:x:1001:1001::/home/alessio:/bin/bash
 ```
-| alessio |    x   | 1001 | 1001 |         | /home/alessio | /bin/bash |
-|---------|--------|------|------|---------|---------------|-----------|
-|Username |Password|UID   |GID   |User Info|Home Directory |Shell      |
+| alessio  |     x    |  1001 |  1001 |           | /home/alessio  | /bin/bash  |
+| -------- | -------- | ----- | ----- | --------- | -------------- | ---------- |
+| Username | Password | UID   | GID   | User Info | Home Directory | Shell      |
 
 > [!NOTE]
 > When a new user is created, it’s entry is automatically added to the "/etc/passwd" file.
