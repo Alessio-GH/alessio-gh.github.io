@@ -3,6 +3,9 @@
 ```bash
 $ getent passwd | cut -d: -f1 | sort
 ```
+> [!NOTE]
+> A prompt will be visualized if you try to create a user that already exists.
+
 <details>
 <summary>output</summary>
   adm
@@ -44,8 +47,7 @@ $ getent passwd | cut -d: -f1 | sort
   tcpdump
   tss
 </details>
-> [!NOTE]
-> A prompt will be visualized if you try to create a user that already exists.
+
 ***
 
 # Execute
@@ -71,9 +73,11 @@ $ id alessio
 $ cat /etc/passwd | grep alessio
   alessio:x:1001:1001::/home/alessio:/bin/bash
 ```
-When a new user is created, it’s entry is automatically added to the "/etc/passwd" file.
 | alessio |    x   | 1001 | 1001 |         | /home/alessio | /bin/bash |
 |---------|--------|------|------|---------|---------------|-----------|
 |Username |Password|UID   |GID   |User Info|Home Directory |Shell      |
+
+> [!NOTE]
+> When a new user is created, it’s entry is automatically added to the "/etc/passwd" file.
 
 [↩️](../Linux.md)
