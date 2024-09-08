@@ -63,6 +63,7 @@ $ useradd alessio
 ```
 > [!WARNING]
 > A prompt will be visualized if you choose a password that doesn't satisfy security checks.
+
 ***
 
 # Check
