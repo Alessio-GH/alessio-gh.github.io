@@ -23,4 +23,4 @@ $ shh -l mele 192.168.159.131
   mele@192.168.159.131's password:
   Last login: Sat Sep  7 18:44:07 2024
 ```
-[↩️](./Linux.md)
+[↩️](../Linux.md)
