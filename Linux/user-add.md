@@ -81,4 +81,7 @@ $ cat /etc/passwd | grep alessio
 > [!NOTE]
 > When a new user is created, it’s entry is automatically added to the "/etc/passwd" file.
 
+> [!TIP]
+> If you want to delete users you can just use *userdel* command.
+
 [↩️](../Linux.md)
