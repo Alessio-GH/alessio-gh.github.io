@@ -25,4 +25,4 @@ $ top
 - **TIME+**: uptime;
 - **COMMAND**: process name.
 
-[↩️](/process-management.md)
+[↩️](/Linux/process-management.html)
