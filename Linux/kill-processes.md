@@ -2,8 +2,9 @@
 ```bash
 kill [OPTION] [PID]
 ```
-> *pkill* to kill by process name instead of PID
-### OPTIONS
+> $ *pkill* to kill by process name instead of PID
+
+OPTIONS
 - **-l**: list options numbers;
 - **-1**: restart;
 - **-2**: interrupt like pressing CTRL+C;
@@ -35,7 +36,7 @@ $ ps
   2111 pts/0    00:00:00 top
   2112 pts/0    00:00:00 ps
 ```
-- use *pkill* command;
+- use *pkill* command.
 ```bash
 $ pkill -9 top
   [1]-  Killed           top
