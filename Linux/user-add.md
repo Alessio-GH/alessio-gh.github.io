@@ -1,4 +1,7 @@
-# Prepare
+# Add new user
+
+## Prepare
+
 ### Identify existing users 🆔
 ```bash
 $ getent passwd | cut -d: -f1 | sort
@@ -50,7 +53,8 @@ $ getent passwd | cut -d: -f1 | sort
 
 ---
 
-# Execute
+## Execute
+
 ### Create user 🪪
 ```bash
 $ useradd alessio
@@ -84,4 +88,4 @@ $ cat /etc/passwd | grep alessio
 > [!TIP]
 > If you want to delete users you can just use *userdel* command.
 
-[↩️](../Linux.md)
+[↩️](../Linux.html)
