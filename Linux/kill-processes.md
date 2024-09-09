@@ -42,4 +42,4 @@ $ pkill -9 top
   [1]-  Killed           top
 ```
 
-[↩️](/process-management.md)
+[↩️](/Linux/process-management.html)
