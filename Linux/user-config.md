@@ -1,4 +1,4 @@
-# List
+# User settings list
 
 ## - Change user password 🛂
 ```bash
@@ -17,4 +17,4 @@ $ passwd alessio
 > [!NOTE]
 > 
 
-[↩️](../Linux.md)
+[↩️](../Linux.html)
