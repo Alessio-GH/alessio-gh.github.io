@@ -18,9 +18,9 @@ $ top
 $ kill
 ```
 
-## - [Background execution 🌤️](bg-fg-processes.html)
+## - [Background execution 🌤️](bg-processes.html)
 ```bash
 $ bg
 ```
 
-[↩️](../Linux.md)
+[↩️](../Linux.html)
