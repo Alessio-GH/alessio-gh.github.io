@@ -1,18 +1,22 @@
-# List
+# Process management
 
 ## - Show running processes 🏃
 ```bash
 $ ps -ef
 ```
 > [!TIP]
-> Better use | more.
+> Better use | more or just *ps*.
 
-## - [Kill processes 💀](kill-processes.md)
+## - [Kill processes 💀](kill-processes.html)
+```bash
+$ kill
+```
 
-## - [Real time view of running processes 👀](running-processes.md)
+## - [Real time running processes view 👀](running-processes.html)
+```bash
+$ top
+```
 
-## - [Check SSH configuration file ⚙️](ssh-config.md)
-> [!WARNING]
-> If you change file configuration, remember to restart SSH service using **$ systemctl restart ssh** or **$ systemctl restart ssh**.
+## - [Background execution 🌤️](bg-fg-processes.html)
 
 [↩️](../Linux.md)
