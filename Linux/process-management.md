@@ -1,17 +1,17 @@
 # List
 
-### - Show running processes 🏃
+## - Show running processes 🏃
 ```bash
 $ ps -ef
 ```
 > [!TIP]
-> Better add | more.
+> Better use | more.
 
-### - [Real time view of running processes 👀](running-processes.html)
+## - [Kill processes 💀](kill-processes.md)
 
-### - [Check/Create SSH firewall rule 🚪](firewall-state.md)
+## - [Real time view of running processes 👀](running-processes.md)
 
-### - [Check SSH configuration file ⚙️](ssh-config.md)
+## - [Check SSH configuration file ⚙️](ssh-config.md)
 > [!WARNING]
 > If you change file configuration, remember to restart SSH service using **$ systemctl restart ssh** or **$ systemctl restart ssh**.
 
