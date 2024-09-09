@@ -20,4 +20,4 @@ $ bg
 $ fg %1
 ```
 
-[↩️](/process-management.html)
+[↩️](/Linux/process-management.html)
