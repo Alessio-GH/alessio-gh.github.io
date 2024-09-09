@@ -1,6 +1,6 @@
 # List
 
-- ## Change user password
+- ## Change user password 🛂
 ```bash
 $ passwd alessio
   Cambio password per l'utente alessio.
@@ -12,6 +12,7 @@ $ passwd alessio
 
 - ## [Change user password expiring date 📅](change-age.md)
 
+- ## [Change user profile directory 🪧](change-directory.md)
 
 > [!NOTE]
 > 
