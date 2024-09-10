@@ -5,6 +5,7 @@
 | - [Add new user 🪪](/Linux/user-add.html) |
 | - [Change user settings 🆔](/Linux/user-config.html) |
 | - [Process management ⏲️](/Linux/process-management.html) |
-| - [SSH remote access ✈️](/Linux/remote-access.html) |
+| - [Remote access ✈️](/Linux/remote-access.html) |
+| - [System info ℹ️](/Linux/system-info.html) |
 
 [↩️](./index.md)
