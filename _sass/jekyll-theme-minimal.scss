@@ -7,23 +7,15 @@ body {
   padding:50px;
   font: 16px/1.5 "Noto Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight:400;
+}
 
+.bgimage {
   background-image: url("/assets/img/Linux_commands.jpg");
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-position: right top;
   background-size: contain
-}
-
-.bgimage {
-  background-image: url("/assets/img/binary_cloud.jpg");
-  background-repeat: no-repeat;
   opacity: 0.6;
-  position: absolute;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: auto;
 }
 
 h1, h2, h3, h4, h5, h6 {
