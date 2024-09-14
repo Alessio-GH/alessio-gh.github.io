@@ -10,11 +10,10 @@ $ passwd alessio
   passwd: tutti token di autenticazione sono stati aggiornati con successo.
 ```
 
-## - [Change user password expiring date 📅](change-age.md)
+## - [Change user password expiring date 📅](change-age.html)
 
-## - [Change user profile directory 🪧](change-directory.md)
+## - [Change user profile directory 🪧](change-directory.html)
 
-> [!NOTE]
-> 
+## - [Change user account default configuration ©️](user-default.html)
 
 [↩️](../Linux.html)
