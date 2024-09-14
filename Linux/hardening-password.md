@@ -1,4 +1,4 @@
-# Password hardening policies
+## Password hardening policies
 
 ### Example Configuration:
 
