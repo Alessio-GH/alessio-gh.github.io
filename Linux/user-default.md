@@ -36,3 +36,5 @@ $ vi /etc/login.defs
 
 > [!WARNING]
 > The contents of this article were created with the assistance of Google Gemini AI searching for /etc/login.defs
+
+[↩️](/Linux/user-config.html)
