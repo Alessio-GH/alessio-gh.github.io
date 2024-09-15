@@ -16,13 +16,7 @@ $ cat /etc/os-release
   VERSION_ID="9"
   PLATFORM_ID="platform:el9"
   PRETTY_NAME="CentOS Stream 9"
-  ANSI_COLOR="0;31"
-  LOGO="fedora-logo-icon"
-  CPE_NAME="cpe:/o:centos:centos:9"
-  HOME_URL="https://centos.org/"
-  BUG_REPORT_URL="https://issues.redhat.com/"
-  REDHAT_SUPPORT_PRODUCT="Red Hat Enterprise Linux 9"
-  REDHAT_SUPPORT_PRODUCT_VERSION="CentOS Stream"
+...
 ```
 
 ### - Update packages
@@ -61,46 +55,7 @@ $ yum --enablerepo=elrepo-kernel install kernel-ml
   Installazione dipendenze:
    kernel-ml-core                 x86_64              6.10.10-1.el9.elrepo               elrepo-kernel               53 M
    kernel-ml-modules              x86_64              6.10.10-1.el9.elrepo               elrepo-kernel               50 M
-  
-  Riepilogo della transazione
-  ========================================================================================================================
-  Installati  3 pacchetti
-  
-  Dimensione totale dello scaricamento: 103 M
-  Dimensione installata: 149 M
-  Procedere [s/N]: s
-  Scaricamento dei pacchetti:
-  (1/3): kernel-ml-6.10.10-1.el9.elrepo.x86_64.rpm                                        100 kB/s |  49 kB     00:00
-  (2/3): kernel-ml-core-6.10.10-1.el9.elrepo.x86_64.rpm                                   1.3 MB/s |  53 MB     00:41
-  (3/3): kernel-ml-modules-6.10.10-1.el9.elrepo.x86_64.rpm                                1.0 MB/s |  50 MB     00:48
-  ------------------------------------------------------------------------------------------------------------------------
-  Totale                                                                                  2.1 MB/s | 103 MB     00:48
-  Esecuzione del controllo di transazione
-  Controllo di transazione eseguito con successo.
-  Test di transazione in corso
-  Test di transazione eseguito con successo
-  Transazione in corso
-    Preparazione in corso        :                                                                                    1/1
-    Installing                   : kernel-ml-core-6.10.10-1.el9.elrepo.x86_64                                         1/3
-    Esecuzione scriptlet in corso: kernel-ml-core-6.10.10-1.el9.elrepo.x86_64                                         1/3
-    Installing                   : kernel-ml-modules-6.10.10-1.el9.elrepo.x86_64                                      2/3
-    Esecuzione scriptlet in corso: kernel-ml-modules-6.10.10-1.el9.elrepo.x86_64                                      2/3
-    Installing                   : kernel-ml-6.10.10-1.el9.elrepo.x86_64                                              3/3
-    Esecuzione scriptlet in corso: kernel-ml-core-6.10.10-1.el9.elrepo.x86_64                                         3/3
-  
-  
-  
-    Esecuzione scriptlet in corso: kernel-ml-6.10.10-1.el9.elrepo.x86_64                                              3/3
-    Verifica in corso            : kernel-ml-6.10.10-1.el9.elrepo.x86_64                                              1/3
-    Verifica in corso            : kernel-ml-core-6.10.10-1.el9.elrepo.x86_64                                         2/3
-    Verifica in corso            : kernel-ml-modules-6.10.10-1.el9.elrepo.x86_64                                      3/3
-  Prodotti installati aggiornati.
-  
-  Installati:
-    kernel-ml-6.10.10-1.el9.elrepo.x86_64                        kernel-ml-core-6.10.10-1.el9.elrepo.x86_64
-    kernel-ml-modules-6.10.10-1.el9.elrepo.x86_64
-  
-  Fatto!
+...
 ```
 >[!NOTE]
 > ... or install last long-term support release using $ yum --enablerepo=elrepo-kernel install kernel-lt
