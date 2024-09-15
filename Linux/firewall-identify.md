@@ -1,4 +1,4 @@
-## 1. Identify the service your OS is using as Firewall 🔥
+## Identify the service your OS is using as Firewall 🔥
 ```bash
 $ rpm -qa | grep firewalld
   firewalld-filesystem-1.3.4-1.el9.noarch
@@ -12,7 +12,7 @@ $ rpm -qa | grep iptables
   iptables-libs-1.8.10-4.el9.x86_64
   iptables-nft-1.8.10-4.el9.x86_64
 ```
-and check their status:
+and check the status is enabled and active (running)
 
 ```bash
 $ systemctl status firewalld
@@ -27,4 +27,16 @@ $ systemctl status firewalld
    CGroup: /system.slice/firewalld.service
            └─846 /usr/bin/python3 -s /usr/sbin/firewalld --nofork --nopid
 ```
-[↩️](remote-access.md)
+or
+
+```bash
+$ systemctl status iptables
+○ iptables.service
+     Loaded: masked (Reason: Unit iptables.service is masked.)
+     Active: inactive (dead)
+...
+```
+
+[↩️back to remote access guide ✈️](/Linux/remote-access.html)
+
+[↩️ back to firewall guide 🔥🚪](/Linux/firewall.html)
