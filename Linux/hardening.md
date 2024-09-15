@@ -1,5 +1,5 @@
 # Hardening steps
-
+---
 ## - Remove packages you don't need 🔒
 > $ yum remove [package_name]
 
