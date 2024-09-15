@@ -9,8 +9,7 @@
 ## - Check listening ports 🔒
 > $ netstat -tunlp
 
-## - Keep your OS up to date 🔒
-> $ yum update
+## - [Keep your OS up to date 🔒](os-update.html)
 
 ## - [User account hardening 🔒](hardening-account.html)
 
