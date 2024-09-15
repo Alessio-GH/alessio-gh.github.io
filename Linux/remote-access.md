@@ -1,5 +1,5 @@
 # Remote access prerequisites
-
+---
 ## - [Identify the service your OS is using as firewall 🔥](firewall-identify.html)
 > [!NOTE]
 > Only one of the two services has to be *active* and *enabled* eventually.
