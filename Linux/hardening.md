@@ -9,7 +9,7 @@
 ## - Check listening ports 🔒
 > $ netstat -tunlp
 
-## - [Keep your OS up to date 🔒](os-update.html)
+## - [Keep your OS up to date (CentOS) 🔒](os-update.html)
 
 ## - [User account hardening 🔒](hardening-account.html)
 
