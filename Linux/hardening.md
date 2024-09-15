@@ -9,14 +9,14 @@
 ## - Check listening ports 🔒
 > $ netstat -tunlp
 
-## - [Keep your OS up to date (CentOS) 🔒](os-update.html)
-
 ## - [User account hardening 🔒](hardening-account.html)
 
 ## - [Configure firewall 🔒](firewall.html)
 
 ## - [Check SSH configuration file 🔒](ssh-config.html)
 
-## - [Enable SELinux 🔒](https://managedserver.it/cose-selinux/)
+## - [Keep your OS up to date (CentOS) 🔒](os-update.html)
+
+## - [Enable SELinux (external website) 🔒](https://managedserver.it/cose-selinux/)
 
 [↩️](../Linux.html)
