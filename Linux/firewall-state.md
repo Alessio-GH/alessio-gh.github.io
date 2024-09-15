@@ -1,4 +1,6 @@
-## 3. Check/Create SSH firewall rule 🚪
+## Check/Create SSH firewall rule 🚪
+
+### List firewall rules
 ```bash
 $ firewall-cmd --list-all
   public (active)
@@ -36,7 +38,8 @@ $ iptables –L --line-numbers
   Chain OUTPUT (policy ACCEPT)
   num  target     prot opt source               destination
 ```
-and open port 22
+
+### Open port 22 for SSH
 
 ```bash
 $ firewall-cmd --permanent --zone=public --add-port=22/tcp
@@ -47,4 +50,7 @@ or
 ```bash
 $ iptables -A INPUT -p tcp --dport 22 -j ACCEPT
 ```
-[↩️](remote-access.md)
+
+[↩️ back to remote access guide ✈️](/Linux/remote-access.html)
+
+[↩️ back to firewall guide 🔥🚪](/Linux/firewall.html)
