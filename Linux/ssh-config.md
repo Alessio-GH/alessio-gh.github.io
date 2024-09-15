@@ -10,5 +10,6 @@ Look for the following settings and their values:
 - **PermitRootLogin**: Specifies whether root logins are allowed (default is `yes`).
 - **PasswordAuthentication**: Specifies whether password authentication is allowed (default is `yes`).
   
-[↩️ ✈️](/Linux/remote-access.html)
-[↩️ 🔥🚪](/Linux/firewall.html)
+[↩️ back to remote access guide ✈️](/Linux/remote-access.html)
+
+[↩️ back to firewall guide 🔥🚪](/Linux/firewall.html)
