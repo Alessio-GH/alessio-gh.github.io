@@ -1,4 +1,4 @@
-## 2. Stop and disable the service you don't need 🚫
+## Stop and disable the firewall service you don't need 🚫
 ```bash
 $ systemctl stop firewalld
 $ systemctl disable firewalld
@@ -14,4 +14,7 @@ $ systemctl stop iptables
 $ systemctl disable iptables
 $ systemctl mask iptables
 ```
-[↩️](remote-access.md)
+
+[↩️ back to remote access guide ✈️](/Linux/remote-access.html)
+
+[↩️ back to firewall guide 🔥🚪](/Linux/firewall.html)
