@@ -1,4 +1,4 @@
-# Make your choice 
+![Make your choice!](/assets/img/MAKE-YOUR-CHOCE.png)
 
 [![Linux_penguin](/assets/img/Linux_penguin.jpg)](Linux.html)
 
