@@ -128,10 +128,37 @@ $ vi org.ldif
   objectClass: organizationalUnit
   ou: LDAPusers
 ...
-$ ldapadd -x -D cn=Manager,dc=rpa,dc=ibm,dc=com -W -f org.ldif
-
+$ ldapadd -x -D cn=manager,dc=LDAP,dc=com -W -f org.ldif
+  Enter LDAP Password:
+  adding new entry "dc=LDAP,dc=com"
+  
+  adding new entry "cn=manager,dc=LDAP,dc=com"
+  
+  adding new entry "ou=LDAPusers,dc=LDAP,dc=com"
 ```
 
+## 11. Configure new users
+```bash
+$ cd /home/mele/Public
+$ vi addUserName.ldif
+...
+  dn: cn=display name,dc=LDAP,dc=com
+  changetype: add
+  objectClass: inetOrgPerson
+  objectClass: organizationalPerson
+  objectClass: person
+  objectClass: top
+  uid: username
+  cn: display name
+  sn: surname
+  displayName: display name
+  mail: username@example.com
+  userPassword: {SSHA}VLZAQjBjBxw9VmZc6V2EnMjhUmlNXI5X
+...
+$ ldapadd -D "cn=manager,dc=LDAP,dc=com" -W -f addUserName.ldif
+  Enter LDAP Password:
+  adding new entry "cn=display name,dc=LDAP,dc=com"
+```
 
 >[!NOTE]
 >Credit to [www.ibm.com](https://www.ibm.com/docs/en/rpa/23.0?topic=ldap-installing-configuring-openldap)
