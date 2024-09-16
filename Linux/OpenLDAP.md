@@ -1,4 +1,4 @@
-# OpenLDAP (CentOS) 📂
+# OpenLDAP (CentOS)
 ---
 ## 1. Enable EPEL repository
 ```bash
