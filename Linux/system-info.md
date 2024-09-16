@@ -1,4 +1,4 @@
-# System info ℹ️
+# System info
 ---
 ## - Show CPU info 🏎️
 ```bash
