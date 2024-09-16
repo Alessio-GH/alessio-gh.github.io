@@ -41,7 +41,16 @@ $ vi /etc/openldap/ldap.conf
   URI     ldap://192.168.159.131
 ```
 
-## 7. Configure olcRootDN administrator
+## 7. Import LDAP schemas
+```bash
+$ ldapadd -Y EXTERNAL -H ldapi:/// -f /etc/openldap/schema/cosine.ldif
+$ ldapadd -Y EXTERNAL -H ldapi:/// -f /etc/openldap/schema/nis.ldif
+$ ldapadd -Y EXTERNAL -H ldapi:/// -f /etc/openldap/schema/inetorgperson.ldif
+$ ldapadd -Y EXTERNAL -H ldapi:/// -f /etc/openldap/schema/openldap.ldif
+$ ldapadd -Y EXTERNAL -H ldapi:/// -f /etc/openldap/schema/dyngroup.ldif
+```
+
+## 8. Configure olcRootDN administrator
 - Create root password
 ```bash
 $ slappasswd
@@ -67,16 +76,8 @@ $ ldapadd -Y EXTERNAL -H ldapi:/// -f rootpwd.ldif
   modifying entry "olcDatabase={0}config,cn=config"
 ```
 
-## 8. Import LDAP schemas
-```bash
-$ ldapadd -Y EXTERNAL -H ldapi:/// -f /etc/openldap/schema/cosine.ldif
-$ ldapadd -Y EXTERNAL -H ldapi:/// -f /etc/openldap/schema/nis.ldif
-$ ldapadd -Y EXTERNAL -H ldapi:/// -f /etc/openldap/schema/inetorgperson.ldif
-$ ldapadd -Y EXTERNAL -H ldapi:/// -f /etc/openldap/schema/openldap.ldif
-$ ldapadd -Y EXTERNAL -H ldapi:/// -f /etc/openldap/schema/dyngroup.ldif
-```
-
 ## 9. Configure manager user
+- Create manager.ldif file in user directory
 ```bash
 $ cd /home/mele/Public
 $ vi manager.ldif
@@ -108,6 +109,7 @@ $ ldapmodify -Y EXTERNAL -H ldapi:/// -f manager.ldif
 ```
 
 ## 10. Configure groups
+- Create org.ldif file in user directory
 ```bash
 $ cd /home/mele/Public
 $ vi org.ldif
@@ -139,6 +141,7 @@ $ ldapadd -x -D cn=manager,dc=LDAP,dc=com -W -f org.ldif
 
 ## 11. Configure new users
 ```bash
+- Create addUserName.ldif file in user directory
 $ cd /home/mele/Public
 $ vi addUserName.ldif
 ...
