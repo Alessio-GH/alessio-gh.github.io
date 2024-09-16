@@ -140,8 +140,8 @@ $ ldapadd -x -D cn=manager,dc=LDAP,dc=com -W -f org.ldif
 ```
 
 ## 11. Configure new users
-```bash
 - Create addUserName.ldif file in user directory
+```bash
 $ cd /home/mele/Public
 $ vi addUserName.ldif
 ...
@@ -168,3 +168,5 @@ $ ldapadd -D "cn=manager,dc=LDAP,dc=com" -W -f addUserName.ldif
 
 >[!NOTE]
 >Config OpenLDAP client [www.ibm.com](https://www.ibm.com/support/pages/how-configure-client-machine-running-centos-authenticate-openldap)
+
+[↩️](../Linux.html)
