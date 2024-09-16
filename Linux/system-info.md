@@ -1,5 +1,5 @@
 # System info ℹ️
-
+---
 ## - Show CPU info 🏎️
 ```bash
 $ cat /proc/cpuinfo
