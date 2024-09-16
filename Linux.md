@@ -8,6 +8,7 @@
 | - [Hardening 🔐](/Linux/hardening.html) |
 | - [Firewall 🔥🚪](/Linux/firewall.html) |
 | - [NTP settings 🕐](/Linux/ntp-settings.html) |
+| - [OpenLDAP 📂](/Linux/OpenLDAP.html) |
 | - [Process management ⏲️](/Linux/process-management.html) |
 | - [Remote access ✈️](/Linux/remote-access.html) |
 | - [System info ℹ️](/Linux/system-info.html) |
