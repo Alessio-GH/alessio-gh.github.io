@@ -1,5 +1,5 @@
 # NTP settings
-
+---
 ## - Check *chrony deamon* status
 ```bash
 $ systemctl status chronyd
@@ -36,7 +36,7 @@ $ vi /etc/chrony.conf
   pool 2.centos.pool.ntp.org iburst
 ... 
 ```
-> add/modify pool list adding new server names or IP
+> modify pool list adding new server names or IP
 
 ```bash
 $ vi /etc/chrony.conf
