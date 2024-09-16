@@ -1,4 +1,4 @@
-## Firewall 🔥🚪
+# Firewall
 ---
 ## - [Identify the service your OS is using as firewall 🔥](firewall-identify.html)
 > [!NOTE]
