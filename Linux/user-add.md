@@ -4,6 +4,7 @@
 ```bash
 $ getent passwd | cut -d: -f1 | sort
 ```
+
 > [!NOTE]
 > A prompt will be visualized if you try to create a user that already exists.
 
@@ -50,6 +51,7 @@ $ getent passwd | cut -d: -f1 | sort
 </details>
 
 ---
+
 ### - Create user 🪪
 ```bash
 $ useradd alessio
@@ -64,6 +66,7 @@ $ useradd alessio
 > A prompt will be visualized if you choose a password that doesn't satisfy security checks.
 
 ---
+
 ### - Check user configs 👌
 ```bash
 $ id alessio
@@ -71,6 +74,7 @@ $ id alessio
 $ cat /etc/passwd | grep alessio
   alessio:x:1001:1001::/home/alessio:/bin/bash
 ```
+
 | alessio  |     x    |  1001 |  1001 |           | /home/alessio  | /bin/bash  |
 | -------- | -------- | ----- | ----- | --------- | -------------- | ---------- |
 | Username | Password | UID   | GID   | User Info | Home Directory | Shell      |
