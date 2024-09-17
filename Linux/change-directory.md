@@ -1,4 +1,5 @@
 ## Change user profile directory 🪧
+---
 - ### Modify default *useradd* command settings:
 ```bash
 $ vi /etc/default/useradd
@@ -12,6 +13,7 @@ $ vi /etc/default/useradd
   CREATE_MAIL_SPOOL=yes
 ```
 > Modify HOME directory.
+
 - ### Modify single user settings:
 ```bash
 $ vi /etc/passwd
@@ -19,3 +21,5 @@ $ vi /etc/passwd
   alessio:x:1001:1001::/home/alessio:/bin/bash
 ```
 > Find user typing "/" into vi editor and modify its directory.
+
+[↩️](/Linux/user-config.html)
