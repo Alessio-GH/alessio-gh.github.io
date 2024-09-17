@@ -16,4 +16,6 @@ $ passwd alessio
 
 ## - [Change user account default configuration ©️](user-default.html)
 
+## - [Create new user 🪪](user-add.html)
+
 [↩️](../Linux.html)
