@@ -1,6 +1,6 @@
 ## Change user profile directory 🪧
 ---
-- ### Modify default *useradd* command settings:
+### - Modify default *useradd* command settings:
 ```bash
 $ vi /etc/default/useradd
   # useradd defaults file
@@ -14,7 +14,7 @@ $ vi /etc/default/useradd
 ```
 > Modify HOME directory.
 
-- ### Modify single user settings:
+### - Modify single user settings:
 ```bash
 $ vi /etc/passwd
 ...
