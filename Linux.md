@@ -5,6 +5,7 @@
 | - |
 | - [Add new user 🪪](/Linux/user-add.html) |
 | - [Change user settings 🆔](/Linux/user-config.html) |
+| - [Cockpit 📋](/Linux/cockpit.html) |
 | - [Hardening 🔐](/Linux/hardening.html) |
 | - [Firewall 🔥🚪](/Linux/firewall.html) |
 | - [NTP settings 🕐](/Linux/ntp-settings.html) |
