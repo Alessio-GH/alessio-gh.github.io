@@ -10,8 +10,8 @@
 > Remember to restart firewall service using **$ systemctl restart firewalld** or **$ systemctl restart iptables**.
 
 ## - [Check/Create SSH firewall rule 🚪](firewall-state.html)
-> [!TIP]
-> Try to connect remotely before changing firewall rules.
+
+## - [Add new service 🆕](firewall-new.html)
 
 ## - Firewall GUI 📺
 ```bash
