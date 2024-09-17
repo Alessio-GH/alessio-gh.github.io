@@ -18,4 +18,6 @@
 $ firewall-config
 ```
 
+![Firewall GUI](/assets/img/firewall_config_GUI.png)
+
 [↩️](../Linux.html)
