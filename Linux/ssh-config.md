@@ -10,6 +10,7 @@ Look for the following settings and their values:
 - **ClientAliveInterval**: specifies idle timeout interval after which you will be automatically logged out (600 seconds = 10 minutes);
 - **ClientAliveCountMax**: specifies the number of chances the client has to respond before the server drops the connection;
 - **PermitRootLogin**: specifies if root logins are allowed (default is `yes`);
+- **AllowUsers**: specifies users allowed to login (e.g. root mele alessio);
 - **PasswordAuthentication**: specifies if password authentication is allowed (default is `yes`).
 
 > [!NOTE]
