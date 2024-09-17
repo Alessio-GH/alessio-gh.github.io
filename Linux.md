@@ -4,7 +4,6 @@
 | List |
 | - |
 | - [Cockpit (GUI) 📋](/Linux/cockpit.html) |
-| - [Create new user 🪪](/Linux/user-add.html) |
 | - [Hardening 🔐](/Linux/hardening.html) |
 | - [Firewall 🔥🚪](/Linux/firewall.html) |
 | - [NTP settings 🕐](/Linux/ntp-settings.html) |
