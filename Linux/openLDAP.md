@@ -51,7 +51,7 @@ $ ldapadd -Y EXTERNAL -H ldapi:/// -f /etc/openldap/schema/dyngroup.ldif
 ```
 
 ## 8. Configure olcRootDN administrator
-- Create root password
+- Create root password:
 ```bash
 $ slappasswd
   New password:
@@ -59,7 +59,7 @@ $ slappasswd
   {SSHA}VLZAQjBjBxw9VmZc6V2EnMjhUmlNXI5X
 ```
 
-- Create rootpwd.ldif file in user directory
+- Create rootpwd.ldif file in user directory:
 ```bash
 $ cd /home/mele/Public
 $ vi rootpwd.ldif
@@ -77,7 +77,7 @@ $ ldapadd -Y EXTERNAL -H ldapi:/// -f rootpwd.ldif
 ```
 
 ## 9. Configure manager user
-- Create manager.ldif file in user directory
+- Create manager.ldif file in user directory:
 ```bash
 $ cd /home/mele/Public
 $ vi manager.ldif
@@ -109,7 +109,7 @@ $ ldapmodify -Y EXTERNAL -H ldapi:/// -f manager.ldif
 ```
 
 ## 10. Configure groups
-- Create org.ldif file in user directory
+- Create org.ldif file in user directory:
 ```bash
 $ cd /home/mele/Public
 $ vi org.ldif
@@ -140,25 +140,25 @@ $ ldapadd -x -D cn=manager,dc=LDAP,dc=com -W -f org.ldif
 ```
 
 ## 11. Configure new users
-- Create addUserName.ldif file in user directory
+- Create [username].ldif file in user directory **REPLACING [username]** with the name of the user that you want to add:
 ```bash
 $ cd /home/mele/Public
-$ vi addUserName.ldif
+$ vi [username].ldif
 ...
-  dn: cn=display name,dc=LDAP,dc=com
+  dn: cn=display_name,dc=LDAP,dc=com
   changetype: add
   objectClass: inetOrgPerson
   objectClass: organizationalPerson
   objectClass: person
   objectClass: top
-  uid: username
-  cn: display name
+  uid: [username]
+  cn: display_name
   sn: surname
-  displayName: display name
-  mail: username@example.com
+  displayName: display_name
+  mail: [username]@example.com
   userPassword: {SSHA}VLZAQjBjBxw9VmZc6V2EnMjhUmlNXI5X
 ...
-$ ldapadd -D "cn=manager,dc=LDAP,dc=com" -W -f addUserName.ldif
+$ ldapadd -D "cn=manager,dc=LDAP,dc=com" -W -f [username].ldif
   Enter LDAP Password:
   adding new entry "cn=display name,dc=LDAP,dc=com"
 ```
