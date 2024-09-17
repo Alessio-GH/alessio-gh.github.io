@@ -3,12 +3,17 @@
 $ vi /etc/ssh/sshd_config
 ```
 Look for the following settings and their values:
-- **Port**: Specifies the port number that SSH listens on (default is `22`).
-- **ListenAddress**: Specifies the IP addresses that SSH listens on (default is `0.0.0.0`, which means all interfaces).
-- **Protocol**: Specifies the SSH protocol version (default is `2`).
-- **HostKey**: Specifies the location of the SSH host keys.
-- **PermitRootLogin**: Specifies whether root logins are allowed (default is `yes`).
-- **PasswordAuthentication**: Specifies whether password authentication is allowed (default is `yes`).
+- **Port**: specifies the port number SSH listens on (default is `22`);
+- **ListenAddress**: specifies IP addresses SSH listens on (default is `0.0.0.0`, which means all interfaces);
+- **Protocol**: specifies the SSH protocol version (default is `2`);
+- **HostKey**: specifies the location of the SSH host keys;
+- **ClientAliveInterval**: specifies idle timeout interval after which you will be automatically logged out (600 seconds = 10 minutes);
+- **ClientAliveCountMax**: specifies the number of chances the client has to respond before the server drops the connection;
+- **PermitRootLogin**: specifies if root logins are allowed (default is `yes`);
+- **PasswordAuthentication**: specifies if password authentication is allowed (default is `yes`).
+
+> [!NOTE]
+> Remember to restart the service after having made changes using $ systemctl restart sshd.
   
 [↩️ back to remote access guide ✈️](/Linux/remote-access.html)
 
