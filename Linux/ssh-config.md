@@ -12,4 +12,4 @@ Look for the following settings and their values:
   
 [↩️ back to remote access guide ✈️](/Linux/remote-access.html)
 
-[↩️ back to firewall guide 🔥🚪](/Linux/firewall.html)
+[↩️ back to hardening guide 🔐](/Linux/hardening.html)
