@@ -1,6 +1,6 @@
-## Add new user 🪪
+## Create new user 🪪
 ---
-### Identify existing users 🆔
+### - Identify existing users 🆔
 ```bash
 $ getent passwd | cut -d: -f1 | sort
 ```
@@ -50,7 +50,7 @@ $ getent passwd | cut -d: -f1 | sort
 </details>
 
 ---
-### Create user 🪪
+### - Create user 🪪
 ```bash
 $ useradd alessio
   passwd alessio
@@ -64,7 +64,7 @@ $ useradd alessio
 > A prompt will be visualized if you choose a password that doesn't satisfy security checks.
 
 ---
-### Check user configs 👌
+### - Check user configs 👌
 ```bash
 $ id alessio
   uid=1001(alessio) gid=1001(alessio) groups=1001(alessio)
