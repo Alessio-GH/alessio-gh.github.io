@@ -4,6 +4,7 @@
 | List |
 | - |
 | - [Cockpit (GUI) 📋](/Linux/cockpit.html) |
+| - [DHCP](/Linux/dhcp.html) |
 | - [Firewall 🔥🚪](/Linux/firewall.html) |
 | - [Hardening 🔐](/Linux/hardening.html) |
 | - [Network 🕸️](/Linux/network.html) |
