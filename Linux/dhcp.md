@@ -35,15 +35,15 @@ $ yum install dhcp-server
 
 ## - Config DHCP
 ```bash
-$ vi /etc/dhcp/dhcp.conf
+$ vi /etc/dhcp/dhcpd.conf
 ...
   default-lease-time 600;
   max-lease-time 7200;
   authoritative;
   
-  subnet 192.168.159.0 netmask 255.255.255.0 {
-      range 192.168.159.200 192.168.159.250;
-      option routers 192.168.159.131;
+  subnet 192.168.10.0 netmask 255.255.255.0 {
+      range 192.168.10.100 192.168.10.200;
+      option routers 192.168.10.1;
       option subnet-mask 255.255.255.0;
       option domain-name-server 8.8.8.8 8.8.4.4;
   }
@@ -55,5 +55,10 @@ $ firewall-cmd --permanent --zone=public --add-port=67/udp --add-port=68/udp
   success
 ```
 
+## - Start/Enable *dhcpd*
+```bash
+$ systemctl start dhcpd
+$ systemctl enable dhcpd
+```
 
 [↩️](/Linux/example.html)
