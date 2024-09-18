@@ -3,7 +3,7 @@
 
 | List |
 | - |
-| - [Chmod :godmode:](/Linux/chmod.html) |
+| - [Chmod 🎰](/Linux/chmod.html) |
 | - [Cockpit (GUI) 📋](/Linux/cockpit.html) |
 | - [DHCP (not working...)](/Linux/dhcp.html) |
 | - [Firewall 🔥🚪](/Linux/firewall.html) |
