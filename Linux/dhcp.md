@@ -61,4 +61,4 @@ $ systemctl start dhcpd
 $ systemctl enable dhcpd
 ```
 
-[↩️](/Linux/example.html)
+[↩️](../Linux.html)
