@@ -10,6 +10,7 @@
 | - [Firewall 🔥🚪](/Linux/firewall.html) |
 | - [Hardening 🔐](/Linux/hardening.html) |
 | - [Network 🕸️](/Linux/network.html) |
+| - [NFS 🔗](/Linux/nfs.html) |
 | - [NTP settings 🕐](/Linux/ntp-settings.html) |
 | - [OpenLDAP (CentOS) 📂](/Linux/openLDAP.html) |
 | - [Process management ⏲️](/Linux/process-management.html) |
