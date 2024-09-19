@@ -7,7 +7,7 @@ $ n <new partition>
 $ p <print partition table>
 $ [Enter for first sector]
 $ [Enter for last sector]
-$ t <change a partition's system ID>
+$ t <change a partition system ID>
 $ L <type L to list all codes>
 $ 8E <change partition type from Linux to Linux LVM>
 $ w <write changes and quit>
