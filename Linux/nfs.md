@@ -3,8 +3,8 @@
 ## - Config NFS server
 ```bash
 $ yum install nfs-utils libnfsidmap rpcbind nfs-server rpc-statd nfs-idmapd # one at a time
-$ systemctl start rpcbind nfs-server rpc-statd nfs-idmapd # one at a time
-$ systemctl enable rpcbind nfs-server # one at a time
+$ systemctl start rpcbind nfs-server rpc-statd nfs-idmapd
+$ systemctl enable rpcbind nfs-server
 $ mkdir /home/Public # shared directory
 $ chmod a+rwx /home/Public # shared permissions
 $ vi /etc/exports 
