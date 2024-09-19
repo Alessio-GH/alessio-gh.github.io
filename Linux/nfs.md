@@ -19,9 +19,9 @@ $ exportfs -rv # export NFS filesystem
 ```bash
 $ yum install nfs-utils rpcbind # one at a time
 $ systemctl rpcbind start
-$ ps -e | grep firewalld # make sure firewalld is stopped (if enabled)
-$ ps -e | grep iptables # make sure iptables is stopped (if enabled)
-$ showmount-e 192.168.1.5 # IP server
+$ systemctl status firewalld # make sure firewalld is stopped (if enabled)
+$ systemctl status iptables # make sure iptables is stopped (if enabled)
+$ showmount -e 192.168.59.131 # server IP
 $ mkdir /mnt/share # create mount directory 
 $ mount 192.168.159.131:/home/Public /mnt/share
 $ df –h
