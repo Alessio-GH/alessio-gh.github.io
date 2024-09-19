@@ -5,10 +5,10 @@
 $ fdisk /dev/sdb
 $ n <new partition>
 $ p <print partition table>
-$ [Enter for first sector]
-$ [Enter for last sector]
-$ t <change a partition system ID>
-$ L <type L to list all codes>
+$ [specify first sector]
+$ [specify last sector]
+$ t <change the partition system ID>
+$ L <list all codes>
 $ 8E <change partition type from Linux to Linux LVM>
 $ w <write changes and quit>
 ```
