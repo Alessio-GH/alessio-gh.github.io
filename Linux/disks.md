@@ -31,4 +31,22 @@ $ mount /dev/test_vg/test_lv /test #mount the new file system
 $ df –h
 ```
 
+## - Mount partition on system boot
+```bash
+$ vi /etc/fstab
+...
+  # Created by anaconda on Mon Aug 26 09:19:21 2024
+  #
+  # Accessible filesystems, by reference, are maintained under '/dev/disk/'.
+  # See man pages fstab(5), findfs(8), mount(8) and/or blkid(8) for more info.
+  #
+  # After editing this file, run 'systemctl daemon-reload' to update systemd
+  # units generated from this file.
+  #
+  /dev/mapper/cs-root     /                       xfs     defaults        0 0
+  /dev/mapper/cs-swap     none                    swap    defaults        0 0
+  /dev/test_vg/test_lv    /test                   xfs     defaults        0 0
+...
+```
+
 [↩️](../Linux.html)
