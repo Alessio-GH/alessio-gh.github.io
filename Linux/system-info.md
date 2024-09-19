@@ -1,6 +1,6 @@
 # System info
 ---
-## - Show CPU info 🏎️
+## - Show CPU info
 ```bash
 $ cat /proc/cpuinfo
   processor       : 0
@@ -15,7 +15,7 @@ $ cat /proc/cpuinfo
 ...
 ```
 
-## - Show disk usage 💾
+## - Show disk usage
 ```bash
 $ df -h
   File system          Dim. Usati Dispon. Uso% Montato su
@@ -28,7 +28,7 @@ $ df -h
   tmpfs                 74M   36K     74M   1% /run/user/1000
 ```
 
-## - Show memory usage 🐏
+## - Show memory usage
 ```bash
 $ free -h
                  total        used        free      shared  buff/cache   available
@@ -36,7 +36,7 @@ $ free -h
   Swap:          2,0Gi       161Mi       1,8Gi
 ```
 
-## - Show routing table 🕸️
+## - Show routing table
 ```bash
 $ netstat -r
   Kernel IP routing table
@@ -45,7 +45,7 @@ $ netstat -r
   192.168.159.0   0.0.0.0         255.255.255.0   U         0 0          0 ens33
 ```
 
-## - Show TCP internet connection 🗺️
+## - Show TCP internet connection
 ```bash
 $ netstat -t
   Active Internet connections (w/o servers)
@@ -55,7 +55,7 @@ $ netstat -t
   tcp        0      0 CentOSvm:ssh            192.168.159.1:64103     ESTABLISHED
 ```
 
-## - Show UDP internet connection 🗺️
+## - Show UDP internet connection
 ```bash
 $ netstat -u
   Active Internet connections (w/o servers)
