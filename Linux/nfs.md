@@ -1,6 +1,6 @@
 # NFS
 ---
-## - Config NFS Server
+## - Config NFS server
 ```bash
 $ yum install nfs-utils libnfsidmap rpcbind nfs-server rpc-statd nfs-idmapd
 $ systemctl start rpcbind nfs-server rpc-statd nfs-idmapd
@@ -15,7 +15,7 @@ $ vi /etc/exports
 $ exportfs-rv # export NFS filesystem
 ```
 
-## - Config NFS Client
+## - Config NFS client
 ```bash
 $ yum install nfs-utils rpcbind
 $ systemctl rpcbind start
@@ -26,4 +26,4 @@ $ mount 192.168.159.131:/home/Public /mnt/share
 $ df –h
 ```
 
-[↩️](/Linux/example.html)
+[↩️](../Linux.html)
