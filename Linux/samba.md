@@ -42,14 +42,14 @@ $ systemctl start smb
 $ systemctl start nmb 
 ```
 
-## - Mount on Windows client
-![Samba shared folder](/assets/img/samba_share.png)
-
 ## - Mount on Linux client
 ```bash
 $ yum -y install cifs-utils samba-client 
 $ mkdir /mnt/samba 
-$ mount -t cifs //[SERVER IP]/[SHARED FOLDER] /mnt/samba
+$ mount -t cifs //[SERVER IP]/[SHARED FOLDER NAME] /mnt/samba -o username=[USERNAME],password=[PASSWORD]
 ```
+
+## - Mount on Windows client
+![Samba shared folder](/assets/img/samba_share.png)
 
 [↩️](/Linux/example.html)
