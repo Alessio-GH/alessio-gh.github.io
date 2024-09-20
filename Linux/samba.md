@@ -29,7 +29,7 @@ $ vi /etc/samba/smb.conf # add the following lines
   map to guest = bad user 
   dns proxy = no
   
-  [share] # shared folder name
+  [Share] # shared folder name
   path = /home/samba 
   valid users = @smbgrp 
   guest ok = no 
