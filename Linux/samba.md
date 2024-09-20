@@ -14,7 +14,7 @@ $ smbpasswd -a alessio # set password
   Added user alessio 
 ```
 
-## - Config shared folder
+## - Shared folder config
 ```bash
 $ mkdir -p /home/samba # create directory to share
 $ chown -R alessio:smbgrp /home/samba # change owner
