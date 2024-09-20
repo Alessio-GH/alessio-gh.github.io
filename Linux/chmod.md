@@ -1,21 +1,5 @@
 # Chmod (Change Mod)
 ---
-## drwxrwxrwx. 1 root root 298 17 set 13.29 file
-- d = directory
-- r = read
-- w = write
-- x = execute
-
-|owner (u)|group (g)|others (a)|
-|---------|---------|----------|
-| 7 | 7 | 7 |
-|rwx|rwx|rwx|
-
-## e.g.
-```bash
-$ chmod 777 file
-```
-
 ## Permission table
 
 |Symbol|Number|Permission|
@@ -28,5 +12,20 @@ $ chmod 777 file
 |r-x|5|Read + Execute|
 |rw-|6|Read + Write|
 |rwx|7|Read + Write + Execute|
+
+## drwxrwxrwx. 1 root root 298 17 set 13.29 file
+- d = directory
+- r = read
+- w = write
+- x = execute
+
+```bash
+$ chmod 777 file
+```
+
+|owner (u)|group (g)|others (a)|
+|---------|---------|----------|
+| 7 | 7 | 7 |
+|rwx|rwx|rwx|
 
 [↩️](../Linux.html)
