@@ -14,7 +14,7 @@ $ smbpasswd -a alessio # set password
   Added user alessio 
 ```
 
-## - Shared folder config
+## - Shared folder config 📁
 ```bash
 $ mkdir -p /home/samba # create directory to share
 $ chown -R alessio:smbgrp /home/samba # change owner
@@ -42,14 +42,14 @@ $ systemctl start smb
 $ systemctl start nmb 
 ```
 
-## - Mount on Linux client
+## - Mount on Linux client 🐧
 ```bash
 $ yum -y install cifs-utils samba-client 
 $ mkdir /mnt/samba 
 $ mount -t cifs //[SERVER IP]/[SHARED FOLDER NAME] /mnt/samba -o username=[USERNAME],password=[PASSWORD]
 ```
 
-## - Mount on Windows client
+## - Mount on Windows client 🪟
 ![Samba shared folder](/assets/img/samba_share.png)
 
 [↩️](/Linux/example.html)
