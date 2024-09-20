@@ -9,8 +9,8 @@ $ mkdir /home/Public # shared directory
 $ chmod a+rwx /home/Public # shared permissions
 $ vi /etc/exports 
 ...
-  /home/Public 192.168.159.134(rw,sync,no_root_squash) # for only 1 client
-  /home/Public *(rw,sync,no_root_squash) # for everyone
+  /home/Public [CLIENT IP](rw,sync,no_root_squash) # for only 1 client
+  /home/Public *(rw,sync,no_root_squash) # for every client
 ...
 $ exportfs -rv # export NFS filesystem
 ```
@@ -21,9 +21,9 @@ $ yum install nfs-utils rpcbind
 $ systemctl rpcbind start
 $ systemctl status firewalld # make sure firewalld is stopped (if enabled)
 $ systemctl status iptables # make sure iptables is stopped (if enabled)
-$ showmount -e 192.168.59.131 # server IP
+$ showmount -e [SERVER IP]
 $ mkdir /mnt/share # create mount directory 
-$ mount 192.168.159.131:/home/Public /mnt/share
+$ mount [SERVER IP]:/home/Public /mnt/share
 $ df –h
 ```
 
