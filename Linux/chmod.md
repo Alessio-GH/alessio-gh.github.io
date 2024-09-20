@@ -16,7 +16,8 @@
 $ chmod 777 file
 ```
 
-## permission table
+## Permission table
+
 |Symbol|Number|Permission|
 |:----:|:----:|----------|
 |---|0|None|
