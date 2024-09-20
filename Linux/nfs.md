@@ -2,7 +2,7 @@
 ---
 ## - Config NFS server
 ```bash
-$ yum install nfs-utils libnfsidmap rpcbind nfs-server rpc-statd nfs-idmapd # one at a time
+$ yum install nfs-utils libnfsidmap rpcbind nfs-server rpc-statd nfs-idmapd
 $ systemctl start rpcbind nfs-server rpc-statd nfs-idmapd
 $ systemctl enable rpcbind nfs-server
 $ mkdir /home/Public # shared directory
@@ -17,7 +17,7 @@ $ exportfs -rv # export NFS filesystem
 
 ## - Config NFS client
 ```bash
-$ yum install nfs-utils rpcbind # one at a time
+$ yum install nfs-utils rpcbind
 $ systemctl rpcbind start
 $ systemctl status firewalld # make sure firewalld is stopped (if enabled)
 $ systemctl status iptables # make sure iptables is stopped (if enabled)
