@@ -49,7 +49,7 @@ $ systemctl start nmb
 ```bash
 $ yum -y install cifs-utils samba-client 
 $ mkdir /mnt/samba 
-$ mount -t cifs //[SERVER IP]/[shared folder name] /mnt/samba
+$ mount -t cifs //[SERVER IP]/[SHARED FOLDER DIRECTORY] /mnt/samba
 ```
 
 [↩️](/Linux/example.html)
