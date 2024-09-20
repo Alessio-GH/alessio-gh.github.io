@@ -16,6 +16,7 @@
 | - [Process management ⏲️](/Linux/process-management.html) |
 | - [Remote access ✈️](/Linux/remote-access.html) |
 | - [Root recovery ♻️](/Linux/root-recovery.html) |
+| - [Samba sharing 💃](/Linux/samba.html) |
 | - [System info ℹ️](/Linux/system-info.html) |
 | - [System upgrade 🔄](/Linux/system-upgrade.html) |
 | - [User configs 🆔](/Linux/user-config.html) |
