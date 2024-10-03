@@ -10,9 +10,10 @@
       update_cache: yes
 
   - name: start httpd service
-    ansible.builtin.service:
+    service:
       name: httpd
-      state: started 
+      state: started
+      enabled: yes 
 
   - name: add https firewall rule
     ansible.posix.firewalld:
@@ -27,12 +28,12 @@
       state: enabled
 
   - name: restart service httpd, in all cases
-    ansible.builtin.service:
+    service:
       name: httpd
       state: restarted
 
   - name: reload firewall service, in all cases
-    ansible.builtin.service:
+    service:
       name: firewalld
       state: restarted
 

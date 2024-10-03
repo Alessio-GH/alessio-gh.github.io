@@ -1,0 +1,10 @@
+---
+
+- hosts: all
+  become: true
+  tasks:
+  - name: install updates (CentOS)
+    ansible.builtin.yum:
+      name: '*'
+      state: latest
+    when: ansible_distribution == "CentOS"
