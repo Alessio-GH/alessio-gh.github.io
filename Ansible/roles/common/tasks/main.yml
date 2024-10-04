@@ -1,0 +1,26 @@
+- name: create sudo user
+  user:
+    name: tizzio
+    groups: root
+
+- name: add ssh key for tizzio
+  authorized_key:
+    user: tizzio
+    key: "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIHaCylLkhQ44viqlWHppxw/X/OAvZj6VfDlZAo2EWTrZ ansible"
+
+- name: add sudoers file for tizzio
+  copy:
+    src: sudoer_tizzio
+    dest: /etc/sudoers.d/tizzio
+    owner: root
+    group: root
+    mode: 0440
+
+- name: generate sshd_config file from template
+  template:
+    src: "{{ ssh_template_file }}"
+    dest: /etc/ssh/sshd_config
+    owner: root
+    group: root
+    mode: 0644
+  notify: generate_sshd

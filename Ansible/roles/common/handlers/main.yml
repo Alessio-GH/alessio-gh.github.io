@@ -1,0 +1,4 @@
+- name: generate_sshd
+  service:
+    name: sshd
+    state: restarted
