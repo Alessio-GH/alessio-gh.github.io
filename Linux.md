@@ -4,6 +4,7 @@
 | List |
 | - |
 | - [Bash scripting 🐚](/Linux/bash.html) |
+| - [Basic commands 🗑️](/Linux/basic-commands.html) |
 | - [Chmod 🎰](/Linux/chmod.html) |
 | - [Cockpit (GUI) 📋](/Linux/cockpit.html) |
 | - [Directories 📂](/Linux/directories.html) |
