@@ -11,4 +11,9 @@ $ crontab -l # list of cronjobs
 |:-:|:-:|:-:|:-:|:-:| - | - |
 | 0       | 9    | *                | *     | 1               | $ yum update -y | Update all installed packages every Monday at 9:00 AM |
 
+```bash
+---
+$ 0 9 * *  1 yum update -y
+```
+
 [↩️](../Linux.html)
