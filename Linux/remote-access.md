@@ -23,6 +23,7 @@
 > If you change file configuration, remember to restart SSH service using **$ systemctl restart sshd**.
 
 # Execute SSH command
+---
 
 ```bash
 $ ssh -l [USER] 192.168.159.131
