@@ -19,11 +19,11 @@ $ exportfs -rv # export NFS filesystem
 ```bash
 $ yum install nfs-utils rpcbind
 $ systemctl rpcbind start
-$ systemctl status firewalld # make sure firewalld is stopped (if enabled)
-$ systemctl status iptables # make sure iptables is stopped (if enabled)
-$ showmount -e [SERVER IP]
-$ mkdir /mnt/share # create mount directory 
-$ mount [SERVER IP]:/home/Public /mnt/share
+$ firewall-cmd --permanent --new-zone=nfs-clients # make sure firewalld isn't blocking NFS port
+$ firewall-cmd --permanent --zone=nfs-clients --add-source=[SERVER IP] # add server IP to authorized NFS clients
+$ showmount -e [SERVER IP] # check shared folder before mounting
+$ mkdir /mnt/Public # create mount directory
+$ mount [SERVER IP]:/home/Public /mnt/Public
 $ df –h
 ```
 
