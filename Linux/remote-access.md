@@ -33,7 +33,7 @@ $ ssh -l [USER] 192.168.159.131
 
 ## - [Set SSH key to access without password 🛂](ssh-key.html)
 
-> [!WARNING]
-> If you change file configuration, remember to restart SSH service using **$ systemctl restart sshd**.
+> [!NOTE]
+> You can set a passphrase instead.
 
 [↩️](../Linux.html)
