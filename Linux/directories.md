@@ -7,7 +7,7 @@
 | $ /etc/ssh/sshd_config | configuration file for the Secure Shell (SSH) |
 | $  |  |
 | $  |  |
-| $  |  |
+| $ /dev/null | black hole |
 | $  |  |
 | $  |  |
 | $  |  |
