@@ -16,7 +16,7 @@
 | $  |  |
 | $  |  |
 | $  |  |
-| $  |  |
+| $ /usr/local/bin | $PATH env variable usefull for containing scripts |
 | $  |  |
 | $  |  |
 | $  |  |
