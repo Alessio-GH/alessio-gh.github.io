@@ -23,8 +23,12 @@ $ firewall-cmd --permanent --new-zone=nfs-clients # make sure firewalld isn't bl
 $ firewall-cmd --permanent --zone=nfs-clients --add-source=[SERVER IP] # add server IP to authorized NFS clients
 $ showmount -e [SERVER IP] # check shared folder before mounting
 $ mkdir /mnt/Public # create mount directory
-$ mount [SERVER IP]:/home/Public /mnt/Public
-$ df –h
+$ mount [SERVER IP]:/home/Public /mnt/Public # mount NFS
+$ df –h # verify mounting point
+$ vi /etc/fstab # add following line to mount at system boot
+...
+  [SERVER IP]:/home/Public /mnt/Public    nfs    defaults    0 0
+...
 ```
 
 [↩️](../Linux.html)
