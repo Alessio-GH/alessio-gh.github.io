@@ -1,5 +1,6 @@
 # Disks
 ---
+
 ## - Create partitions
 ```bash
 $ fdisk /dev/sdb
@@ -13,26 +14,35 @@ $ 8E # change partition type from Linux to Linux LVM
 $ w # write changes and quit
 ```
 
+## - Create physical volumes (PV)
+```bash
+$ pvcreate /dev/sdb # create physical volume (PV)
+$ pvcreate /dev/sdc # create another physical volume (PV)
+$ pvdisplay # check PVs
+```
+
+## - Create volume groups (VG)
+```bash
+$ vgcreate vg1 /dev/sdb /dev/sdc # create a single volume group (VG) out of two PVs
+$ vgdisplay # check VG
+```
+
 ## - Create logical volumes (LV)
 ```bash
-$ pvcreate /dev/sdb1 # create physical volume (PV)
-$ pvdisplay # verify PV
-$ vgcreate test_vg /dev/sdb1 # create volume group (VG)
-$ vgdisplay test_vg # verify VG
-$ lvcreate –n test_lv –L 1.5G test_vg # create logical volume (LV)
-$ lvdisplay # verify LV
-$ mkfs -t xfs /dev/test_vg/test_lv # format LV
+$ lvcreate –n lv1 –L 5G vg1 # create logical volume (LV)
+$ lvdisplay # check LV
+$ mkfs -t xfs /dev/vg1/lv1 # format LV
 ```
 
 ## - Format partitions
 ```bash
-$ mkfs -t [FYLE SYSTEM TIPE] [PARTITION PATH]
+$ mkfs -t [FILE SYSTEM TYPE] [PARTITION PATH]
 ```
 
 ## - Mount partitions
 ```bash
 $ mkdir /mnt/test # create a new directory
-$ mount /dev/test_vg/test_lv /mnt/test # mount the new file system
+$ mount /dev/vg1/lv1 /mnt/test # mount the new file system
 $ df –h
 ```
 
@@ -50,8 +60,18 @@ $ vi /etc/fstab
   #
   /dev/mapper/cs-root     /                       xfs     defaults        0 0
   /dev/mapper/cs-swap     none                    swap    defaults        0 0
-  /dev/test_vg/test_lv    /mnt/test               xfs     defaults        0 0
+  /dev/vg1/lv1            /mnt/test               xfs     defaults        0 0
 ...
+```
+
+## - Extend partitions
+```bash
+$ pvcreate /dev/sdb # create PV
+$ vgdisplay # identify VG to extend
+$ vgextend /dev/cs /dev/sdb # extend VG
+$ lvdisplat # identify LV to extend
+$ lvresize -L +5G /dev/cs/root
+$ resize2fs /dev/cs/root
 ```
 
 [↩️](../Linux.html)
