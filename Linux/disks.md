@@ -19,7 +19,7 @@ $ pvcreate /dev/sdb1 # create physical volume (PV)
 $ pvdisplay # verify PV
 $ vgcreate test_vg /dev/sdb1 # create volume group (VG)
 $ vgdisplay test_vg # verify VG
-$ lvcreate –n test_lv –size 1.5G test_vg # create logical volume (LV)
+$ lvcreate –n test_lv –L 1.5G test_vg # create logical volume (LV)
 $ lvdisplay # verify LV
 $ mkfs -t xfs /dev/test_vg/test_lv # format LV
 ```
