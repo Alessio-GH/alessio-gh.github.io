@@ -26,8 +26,8 @@ $ mkfs.xfs /dev/test_vg/test_lv #format LV
 
 ## - Mount partition
 ```bash
-$ mkdir /test #create a new directory
-$ mount /dev/test_vg/test_lv /test #mount the new file system
+$ mkdir /mnt/test #create a new directory
+$ mount /dev/test_vg/test_lv /mnt/test #mount the new file system
 $ df –h
 ```
 
@@ -45,7 +45,7 @@ $ vi /etc/fstab
   #
   /dev/mapper/cs-root     /                       xfs     defaults        0 0
   /dev/mapper/cs-swap     none                    swap    defaults        0 0
-  /dev/test_vg/test_lv    /test                   xfs     defaults        0 0
+  /dev/test_vg/test_lv    /mnt/test               xfs     defaults        0 0
 ...
 ```
 
