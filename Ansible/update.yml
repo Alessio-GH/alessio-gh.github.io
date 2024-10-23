@@ -8,3 +8,8 @@
       name: '*'
       state: latest
     when: ansible_distribution == "CentOS"
+  - name: install updates (CentOS)
+    ansible.builtin.apt:
+      name: '*'
+      state: latest
+    when: ansible_distribution == "Ubuntu"

@@ -3,7 +3,7 @@
 - hosts: all
   become: true
   tasks:
-  - name: install httpd and php package
+  - name: install apache and php packages
     package:
       name:
         - "{{ apache_package_name }}"
@@ -11,6 +11,9 @@
       state: latest
       update_cache: yes
 
+- hosts: centos
+  become: true
+  tasks:
   - name: start and enable httpd service
     service:
       name: "{{ apache_service }}"
@@ -38,4 +41,3 @@
     service:
       name: firewalld
       state: restarted
-
