@@ -1,0 +1,27 @@
+- name: start and enable httpd service
+  service:
+    name: "{{ apache_service }}"
+    state: started
+    enabled: yes 
+
+- name: add https firewall rule
+  ansible.posix.firewalld:
+    service: https
+    permanent: true
+    state: enabled
+
+- name: add http firewall rule
+  ansible.posix.firewalld:
+    service: http
+    permanent: true
+    state: enabled
+
+- name: restart service httpd, in all cases
+  service:
+    name: "{{ apache_service }}"
+    state: restarted
+
+- name: reload firewall service, in all cases
+  service:
+    name: firewalld
+    state: restarted
