@@ -4,10 +4,9 @@
 | List |
 | - |
 | - [Bash scripting 🐚](/Linux/bash.html) |
-| - [Basic commands 🗑️](/Linux/basic-commands.html) |
+| - [Basic commands 🗑️ and directories 📂](/Linux/basic.html) |
 | - [Chmod 🎰](/Linux/chmod.html) |
 | - [Cockpit (GUI) 📋](/Linux/cockpit.html) |
-| - [Directories 📂](/Linux/directories.html) |
 | - [Disks 💿](/Linux/disks.html) |
 | - [DHCP (not working...)](/Linux/dhcp.html) |
 | - [Firewall 🔥🚪](/Linux/firewall.html) |
