@@ -9,6 +9,10 @@
 | **$ rsync -azuv [ORIGIN] [DESTINATION]** | backup folders |
 | **$ rsync -azuve ssh [ORIGIN] [USER]@[IP]:[DESTINATION]** | tranfer files |
 | **$ rsync -azuve ssh [USER]@[IP]:[DESTINATION] [ORIGIN]** | retrieve files |
+| **$ tar -xf [.tar FILE]** | extract .tar file |
+| **$ tar -xzf [.tar.gz FILE]** | extract .tar.gz file |
+| **$ tar -xjf [.tar.bz2 FILE]** | extract .tar.bz2 file |
+| **$ tar -xJf [.tar.xz FILE]** | extract .tar.xz file |
 
 # Directories
 ---
